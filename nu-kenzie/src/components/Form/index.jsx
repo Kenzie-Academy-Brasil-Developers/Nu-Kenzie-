@@ -9,7 +9,7 @@ function FormCreateValue({setValues, values}){
 
         setValues([...values, {
             name: description,
-            value: value,
+            value: +value,
             valueType: valueType,
         }])
     }
