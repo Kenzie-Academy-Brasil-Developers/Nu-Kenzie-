@@ -1,0 +1,58 @@
+h1, h2, p {
+    color: white;
+}
+
+h1 span {
+    color: #FD377E;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 36px;
+    margin-bottom: 2px;
+}
+
+p{
+    margin: 16px 0;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.799);
+}
+
+.start-main {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 5%;
+    height: 90vh;
+    background-color: #212529;
+}
+
+figure {
+    height: 485px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    margin: 8px 0;
+    width: 180px;
+    height: 38px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 6px ;
+    background-color:#FD377E;
+}
