@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import SetHome from './pages/startPage'
+import StartPage from './pages/startPage'
 import HomePage from './pages/homePage';
 
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       {page === 'start'?
       (
-        <SetHome setPage={setPage}/>
+        <StartPage setPage={setPage}/>
       )
       :
       (

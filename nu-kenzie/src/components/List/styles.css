@@ -1,0 +1,23 @@
+.value-render{
+    display: flex;
+    gap: 10px;
+}
+.render-cards-organizer{
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.value-render button {
+    width: fit-content;
+    padding: 8px 10px;
+    color: black;
+    font-weight: 600px;
+    background-color: #f8f9fa;
+    transition: ease .1s;
+}
+
+.value-render button:hover {
+    color: #fff;
+    background-color: #FD377E;
+}
