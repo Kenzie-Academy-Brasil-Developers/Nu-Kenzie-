@@ -16,11 +16,12 @@ function ListValues({ values, setValues }) {
         </div>
         </div>
         <div className="render-cards">
-            {const sendToRender = (filtered) =>{}
+            {values.map((value, i)=> 
             (<CardRender 
-            values={values}
-            setValues={setValues} 
-            />)
+                values={value}
+                setValues={setValues} 
+                key={i}
+                />))            
         }
         </div>
     </section>
