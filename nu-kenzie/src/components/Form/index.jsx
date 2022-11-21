@@ -1,4 +1,4 @@
-import "./styles.css"
+import "./styles.css";
 
 function FormCreateValue({setValues, values}){
     const handleSubmit = (e) => {
@@ -23,13 +23,13 @@ function FormCreateValue({setValues, values}){
             <div>
             <p className="add-value-p">Descrição</p>
             <input name="valueName" className="value-descritpion" type="text" placeholder="Digite aqui sua descrição" required/>
-            <p className="value-name-sample"></p>
+            <p className="add-value-p add-value-sample">Ex: Compra de roupas</p>
             </div>
             <div className="form-data-organizer">
                 <div className="form-data">
                     <p className="add-value-p">Valor</p>
                     <input name="valueInput" className="value-integer" type="number" min={1} required/>
-                    <p className="add-value-p add-value-sample">Ex: Compra de roupas</p>
+                    
                 </div>
                 <div className="form-data">
                     <p className="add-value-p">Tipo de valor</p>

@@ -1,0 +1,11 @@
+.display-total{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border: 2px solid #f8f9fa;
+    width: 330px;
+    margin-top: 20px;
+}
+.display-total h4 {
+    margin: 0;
+}
