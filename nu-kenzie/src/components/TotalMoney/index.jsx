@@ -8,14 +8,14 @@ function DisplayTotal({ values }) {
   }, 0);
 
   return (
-    <div>
+    <div className="display-total-box">
       <div className="display-total">
         <h4>Valor total:</h4>
         <h4>
-          <span>$ {difference}</span>
+          <span className="color-total">{difference.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
         </h4>
       </div>
-      <p className="">Valor referente ao seu saldo</p>
+      <p className="total-value-advice">Valor referente ao seu saldo</p>
     </div>
   );
 }

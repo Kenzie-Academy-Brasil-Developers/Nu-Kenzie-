@@ -1,11 +1,24 @@
-.display-total{
+.display-total-box{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 20px 20px;
     border: 2px solid #f8f9fa;
     width: 330px;
     margin-top: 20px;
+    gap: 15px;
+}
+.display-total{
+    display: flex;
+    justify-content: space-between;
 }
 .display-total h4 {
     margin: 0;
+}
+.total-value-advice {
+    color: black;
+    margin: 0;
+}
+.color-total{
+    color: #FD377E;
 }
