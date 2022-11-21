@@ -4,10 +4,10 @@ import {FaTrash} from "react-icons/fa"
 
 
 function CardRender({ value, removeValue, index }) {
-  console.log(value)
+
 
   return (
-    <div
+    <div className="value-card"
       style={
         { borderLeft: value?.valueType === "value-enter" ?
          "solid 5px #03B898"
@@ -18,10 +18,10 @@ function CardRender({ value, removeValue, index }) {
       }
     >
       <div>
-      <h3>{value.name}</h3>
-      <p className="value-type-tag">{value.valueType}</p>
+      <h3 className="card-title">{value.name}</h3>
+      <p className="value-type-tag">{value.valueType === "value-enter"? "Entrada":"Saída"}</p>
       </div>
-      <div>
+      <div className="card-options">
         <h4>{value.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</h4>
         <FaTrash onClick={() => removeValue(index)}/>
       </div>

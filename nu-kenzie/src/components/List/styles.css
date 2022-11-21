@@ -21,3 +21,8 @@
     color: #fff;
     background-color: #FD377E;
 }
+
+.render-cards{
+    height: 450px;
+    overflow-y: auto;
+}
