@@ -1,9 +1,27 @@
+@media (max-width: 800px) {
+    .render-cards-organizer{
+        display: flex;
+        flex-direction: column;
+    }
+    .render-cards-organizer{
+        width: 210px;
+    }
+    .render-cards{
+        max-width: 220px;
+        max-height: 300px;
+    }
+}
+
 .value-render{
     display: flex;
     gap: 10px;
 }
+@media (min-width:800px) {
+    .render-cards-organizer{
+        width: 550px;
+    }
+}
 .render-cards-organizer{
-    width: 550px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +41,11 @@
 }
 
 .render-cards{
-    height: 650px;
     overflow-y: auto;
+}
+
+@media(min-width: 800px) {
+    .render-cards{
+        max-height: 400px;
+    }
 }

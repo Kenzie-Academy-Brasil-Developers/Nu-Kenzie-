@@ -1,59 +1,87 @@
-.home-main{
+.home-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  border-radius: 6px;
+}
+
+.home-main-organizer {
+  width: 950px;
+}
+
+form {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f8f9fa;
+  padding: 30px 20px;
+}
+
+@media (max-width: 800px) {
+  form {
+    width: 290px;
+    max-width: 80vw;
     display: flex;
     justify-content: center;
-    margin-top: 35px;
-    border-radius: 6px;
+    padding: 0 10px 0 10px;
+  }
+  .value-descritpion {
+    width: 95%;
+  }
+  .form-data-organizer {
+    max-width: 100%;
+  }
+  .form-organizer {
+    max-width: 100%;
+  }
 }
 
-.home-main-organizer{
-    width: 950px;
+
+.form-organizer {
+  width: 100%;
+}
+.form-organizer input {
+  width: 95%;
 }
 
-form{
-    width: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #f8f9fa;
-    padding: 30px 20px;
+.value-descritpion {
+  max-width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #f8f9fa;
 }
 
-.value-descritpion{
-    width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    background-color: #f8f9fa;
+.add-value-p {
+  color: black;
+  font-weight: 500;
 }
 
-.add-value-p{
-    color: black;
-    font-weight: 500;
+.form-data-organizer {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.form-data-organizer{
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+.form-data {
+  width: 140px;
 }
 
-.form-data{
-    width: 140px;
-}
-
-.form-data input, select{
-    width: 90%;
-    height: 35px;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    background-color: #f8f9fa;
-    font-weight: 500;
+.form-data input,
+select {
+  width: 90%;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  font-weight: 500;
 }
 
 form button {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
 }

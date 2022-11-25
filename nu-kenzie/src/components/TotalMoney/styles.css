@@ -1,10 +1,16 @@
+@media (max-width: 800px) {
+    .display-total-box{
+        width: 100%;
+    }
+}
+
 .display-total-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 20px;
     border: 2px solid #f8f9fa;
-    width: 330px;
+    max-width: 330px;
     margin-top: 20px;
     gap: 15px;
 }

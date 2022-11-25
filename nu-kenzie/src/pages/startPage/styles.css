@@ -56,3 +56,36 @@ button{
     border-radius: 6px ;
     background-color:#FD377E;
 }
+
+@media(max-width: 800px) {
+    .start-main{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
+    }   
+    .text-centralizer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: .7rem;
+    }
+    .start-figure{
+        max-width: 310px;
+    }
+    .start-main{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}

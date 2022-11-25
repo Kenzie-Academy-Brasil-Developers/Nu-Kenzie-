@@ -1,3 +1,9 @@
+@media(max-width: 800px){
+    .value-card{
+        width: 175px;
+    } 
+}
+
 .value-type-tag{
     color: black;
 }
