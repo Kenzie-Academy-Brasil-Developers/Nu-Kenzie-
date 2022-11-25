@@ -3,10 +3,11 @@ import CardRender from "./Card";
 import { useEffect, useState } from "react";
 
 function ListValues({ values, setValues }) {
+    console.log(values)
     const [filtered, setFilter ] = useState(values)
 
-    const removeValue = (valueIndex) => {
-        setValues(values.filter((e,i) => i !== valueIndex))
+    const removeValue = (id) => {
+        setValues(values.filter((e) => e.id !== id))
     }
 
     const all = () => {
@@ -38,8 +39,7 @@ function ListValues({ values, setValues }) {
             (<CardRender 
                 value={value}
                 setValues={setValues} key={i}
-                removeValue={removeValue}
-                index={i} 
+                removeValue={removeValue} 
                 />))            
         }
         </div>

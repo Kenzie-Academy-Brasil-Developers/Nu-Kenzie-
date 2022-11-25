@@ -3,7 +3,7 @@ import "./styles.css";
 import {FaTrash} from "react-icons/fa"
 
 
-function CardRender({ value, removeValue, index }) {
+function CardRender({ value, removeValue }) {
 
 
   return (
@@ -23,7 +23,7 @@ function CardRender({ value, removeValue, index }) {
       </div>
       <div className="card-options">
         <h4>{value.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</h4>
-        <FaTrash onClick={() => removeValue(index)}/>
+        <FaTrash onClick={() => removeValue(value.id)}/>
       </div>
     </div>
   );

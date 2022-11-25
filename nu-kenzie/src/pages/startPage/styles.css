@@ -61,7 +61,7 @@ button{
     .start-main{
         padding-top: 50px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 50px;
         
     }   
@@ -88,4 +88,23 @@ button{
         flex-direction: column;
         overflow: hidden;
     }
+}
+
+@media(max-width: 1100px){
+    .start-figure{
+        width: 440px;
+    }
+    .text-centralizer{
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 1350px) {
+    .start-main{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
+    }   
 }

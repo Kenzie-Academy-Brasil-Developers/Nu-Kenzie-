@@ -1,4 +1,5 @@
 import "./styles.css";
+import { uuid as uuidv4, v4 } from "uuid";
 
 function FormCreateValue({ setValues, values }) {
   const handleSubmit = (e) => {
@@ -10,12 +11,14 @@ function FormCreateValue({ setValues, values }) {
     setValues([
       ...values,
       {
+        id: v4(),
         name: description,
         value: +value,
         valueType: valueType,
       },
     ]);
   };
+  
 
   return (
     <form

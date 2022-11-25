@@ -1,5 +1,8 @@
 .home-main-organizer {
     display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 30px;
     gap: 30px;
 }
 
@@ -21,4 +24,11 @@
         max-width: 95vw;
         flex-wrap: wrap;
     }
+}
+
+@media(max-width: 1100){
+    .aside-organizer{
+        margin-left: 30px;
+    }
+    
 }
